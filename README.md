@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/31752329/README.md)
 # pvcoat
 
 **Status: released, v0.1.0, 2 September 2026.** Author verification complete; see
@@ -204,4 +203,3 @@ modelling decision, coefficient and validity threshold is the author's, and ever
 number in this repository was verified by the author against the source papers
 before release. What was checked, and what was decided at each judgement call, is
 recorded in `docs/VERIFICATION_RECORD.md`.
-# pvcoat

@@ -1,0 +1,46 @@
+pvcoat QA report
+generated 2026-09-02T17:40:53+00:00 with pvcoat 0.1.0
+
+This report exists so that every number in the documentation can be
+checked by hand against the equations in docs/MODELS.md. Nothing here is
+fitted; each line is one closed-form evaluation.
+
+1. Metering arithmetic
+   solids volume fraction c/rho_film = 0.216010
+   target dry 700.0 nm -> wet 3.2406 um
+   check: 3.2406 um x 0.216010 = 700.0 nm
+   pump setting Q = h W U = 0.0972 mL/min
+
+2. Dimensionless groups at the slot-die working point
+   Ca = mu U / sigma = 0.003 x 0.01 / 0.03 = 0.001
+   Re = rho q / mu = 0.0156629
+   both are well inside the viscocapillary validity range
+
+3. Low-flow limit
+   h_min = 0.67 H_down Ca^(2/3) = 0.67 x 100.0 um x 0.001^(2/3) = 0.6700 um
+   margin h_wet / h_min = 4.84
+   the 700 nm target stays coatable up to 105.9 mm/s at this gap
+
+4. Vacuum window
+   window = -4.411 to 7.589 mbar
+   width = 4 sigma / H_up = 12.000 mbar (check: 12.000 mbar)
+   lower bound is negative, so no vacuum box is required
+
+5. Air entrainment
+   U_ae = 6.9 mu^-0.67 with mu = 3 mPa s -> 3.305 m/s
+   margin at the slot-die working point: 330.5x
+
+6. Blade regimes
+   crossover U* = 0.6291 mm/s
+   thinnest achievable dry film at U*: 34.3 nm
+   at 15.0 mm/s the landau_levich branch governs, giving 284.5 nm
+
+7. Spot checks for the author (docs/VERIFY_CHECKLIST.md)
+   V1 vacuum-window sign convention against Higgins and Scriven (1980)
+   V2 Gutoff-Kendrick prefactor and units against the 1982 paper
+   V3 R_downstream,min = H_down / 2 by geometry
+   V4 the Ca and Re ceilings in pvcoat.validity
+   V5 every ink property above, against your own measurements
+   V6 the package name and the author block
+
+verdicts: slot die operable, blade operable

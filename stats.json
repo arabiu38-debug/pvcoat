@@ -1,0 +1,62 @@
+{
+  "generated_utc": "2026-09-02T17:40:53+00:00",
+  "pvcoat_version": "0.1.0",
+  "python": "3.12.3",
+  "status": "released",
+  "ink": {
+    "name": "1.4 M FAPbI3 in DMF/DMSO",
+    "assumptions": {
+      "viscosity": "3 cP",
+      "surface_tension": "30 mN/m",
+      "density": "1.45 g/cm3",
+      "molarity_mol_per_l": 1.4,
+      "molar_mass_g_per_mol": 632.6,
+      "film_density": "4.1 g/cm3",
+      "evaporation_flux": "1e-10 m2/s"
+    },
+    "viscosity_pa_s": 0.003,
+    "surface_tension_n_m": 0.03,
+    "density_kg_m3": 1450.0,
+    "solids_concentration_kg_m3": 885.64,
+    "film_density_kg_m3": 4100.0,
+    "solids_volume_fraction": 0.21600975609756098,
+    "capillary_length_m": 0.0014525004929511383
+  },
+  "slot_die": {
+    "gap_downstream_m": 9.999999999999999e-05,
+    "gap_upstream_m": 9.999999999999999e-05,
+    "coating_width_m": 0.05,
+    "speed_m_s": 0.01,
+    "target_dry_thickness_m": 7e-07,
+    "target_wet_thickness_m": 3.2405943724312358e-06,
+    "flow_rate_m3_s": 1.6202971862156179e-09,
+    "flow_rate_ml_min": 0.09721783117293707,
+    "capillary_number": 0.001,
+    "reynolds_number": 0.015662872800084306,
+    "low_flow_limit_m": 6.700000000000001e-07,
+    "low_flow_margin": 4.8367080185540825,
+    "min_thickness_no_vacuum_m": 7.124419746817298e-07,
+    "vacuum_window_pa": [
+      -441.11529690090447,
+      758.8847030990955
+    ],
+    "air_entrainment_speed_m_s": 3.3050486000251587,
+    "speed_margin": 330.50486000251584,
+    "verdict": "operable",
+    "max_speed_for_target_m_s": 0.1059160187575629
+  },
+  "blade": {
+    "gap_m": 0.00015,
+    "meniscus_radius_m": 7.5e-05,
+    "speed_m_s": 0.015,
+    "capillary_number": 0.0015,
+    "wet_thickness_m": 1.3169225505899708e-06,
+    "dry_thickness_m": 2.844681189523175e-07,
+    "regime": "landau_levich",
+    "crossover_speed_m_s": 0.0006290720112720726,
+    "minimum_dry_thickness_m": 3.433784244521683e-08,
+    "air_entrainment_speed_m_s": 3.3050486000251587,
+    "verdict": "operable"
+  },
+  "air_entrainment_gutoff_kendrick_m_s": 3.3050486000251587
+}
